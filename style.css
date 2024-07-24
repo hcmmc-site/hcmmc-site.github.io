@@ -311,7 +311,7 @@ a:hover {
 @media (max-width: 480px) {
     .year {
         text-align: left;
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 
@@ -345,7 +345,7 @@ a:hover {
 }
 @media (max-width: 480px) {
     .problem-name {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
@@ -359,7 +359,7 @@ a:hover {
 }
 @media (max-width: 480px) {
     .author {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
@@ -432,7 +432,9 @@ a:hover {
     }
 }
 @media (max-width: 480px) {
-    margin-right: none;
+    #nav-bar {
+        margin-bottom: 34px;
+    }
 }
 
 #logo {
@@ -828,6 +830,6 @@ a:hover {
     }
 
     #small-on-phones {
-        font-size: 26px;
+        font-size: 24px;
     }
 }
