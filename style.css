@@ -1,0 +1,833 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 115px;
+    font-weight: 700;
+    font-style: italic;
+    
+    margin: 0;
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 75px;
+    }
+}
+
+h2 {
+    font-size: 100px;
+    font-weight: 700;
+    font-style: italic;
+    
+    margin: 0;
+}
+@media (max-width: 480px) {
+    h2 {
+        font-size: 60px;
+    }
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 500;
+
+    margin: 0;
+}
+@media (max-width: 480px) {
+    h3 {
+        font-size: 35px;
+    }
+}
+
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+}
+
+h5 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+    color: dimgray;
+
+    text-align: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (max-width: 480px) {
+    h5 {
+        margin-left: inherit;
+        margin-right: inherit;
+
+        font-size: 30px;
+    }
+}
+
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: dimgray;
+
+    text-align: justify;
+}
+
+a {
+    color: burlywood;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav-item {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+    color: dimgray;
+
+    margin-left: 40px;
+}
+
+.gold-hover:hover {
+    text-decoration: none;
+
+    color: burlywood;
+}
+
+.banner {
+    background-image: url("img/hero-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 50px;
+
+    border-radius: 20px;
+
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+
+    text-align: center;
+
+    box-shadow: 2px 2px 2px gainsboro;
+
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.hero-photo {
+    width: 50%;
+    height: auto;
+
+    object-fit: cover;
+
+    border: 15px solid white;
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    margin: auto;
+}
+
+.move-from-left-at-start {
+    animation: move-in-from-left ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.move-from-right-at-start {
+    animation: move-in-from-right ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.gold {
+    color: burlywood;
+
+    font-weight: 400;
+}
+
+.grid * {
+    text-align: center;
+}
+
+.grid p {
+    text-align: justify;
+}
+
+.gold-h7 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: burlywood;
+}
+
+.age-info {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: silver;
+}
+
+.bio {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    display: flex;
+}
+@media (max-width: 480px) {
+    .bio {
+        display: inherit;
+    }
+}
+
+.bio-photo {
+    width: 30%;
+    height: auto;
+
+    object-fit: cover;
+
+    view-timeline-name: --move-in-from-left;
+    view-timeline-axis: block;
+
+    animation: move-in-from-left ease both;
+    animation-timeline: --move-in-from-left;
+    animation-range: entry 50% cover 50%;
+}
+@keyframes move-in-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@media (max-width: 480px) {
+    .bio-photo {
+        width: 100%;
+        
+        margin-bottom: -75px;
+    }
+}
+
+.bio-info {
+    float: right;
+
+    margin-left: 30px;
+    padding-top: 0;
+
+    view-timeline-name: --move-in-from-right;
+    view-timeline-axis: block;
+
+    animation: move-in-from-right ease both;
+    animation-timeline: --move-in-from-right;
+    animation-range: entry 50% cover 50%;
+}
+@keyframes move-in-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@media (max-width: 480px) {
+    .bio-info {
+        float: none;
+        width: 100%;
+
+        margin: inherit;
+        margin-top: none;
+
+        animation-range: entry 50% cover 30%;
+    }
+}
+
+.name {
+    color: burlywood;
+
+    font-weight: 400;
+
+    margin-bottom: 0;
+}
+
+.title {
+    color: silver;
+
+    font-weight: 200;
+
+    margin-top: 0;
+    transform: translateX(20px);
+}
+
+.poty {
+    display: flex;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.year {
+    color: gainsboro;
+
+    font-weight: 400;
+    font-size: 100px;
+
+    margin: 0;
+
+    padding-right: 10px;
+
+    width: 50%;
+    text-align: right;
+
+    view-timeline-name: --move-in-from-left;
+    view-timeline-axis: block;
+
+    animation: move-in-from-left ease both;
+    animation-timeline: --move-in-from-left;
+    animation-range: entry 75% cover 25%;
+}
+@media (max-width: 480px) {
+    .year {
+        text-align: left;
+        font-size: 60px;
+    }
+}
+
+.poty-info {
+    margin: 0;
+    padding: 0;
+
+    padding-left: 10px;
+
+    width: 50%;
+
+    float: right;
+
+    view-timeline-name: --move-in-from-right;
+    view-timeline-axis: block;
+
+    animation: move-in-from-right ease both;
+    animation-timeline: --move-in-from-right;
+    animation-range: entry 75% cover 25%;
+}
+
+.problem-name {
+    color: burlywood;
+
+    font-weight: 400;
+    font-size: 40px;
+
+    margin: 0;
+
+    text-align: left;
+}
+@media (max-width: 480px) {
+    .problem-name {
+        font-size: 35px;
+    }
+}
+
+.author {
+    font-weight: 200;
+    font-size: 40px;
+
+    margin: 0;
+
+    text-align: left;
+}
+@media (max-width: 480px) {
+    .author {
+        font-size: 35px;
+    }
+}
+
+.sample-exam {
+    display: block;
+    width: 420px;
+
+    padding: 20px;
+    margin: auto;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: white;
+
+    background-color: burlywood;
+
+    border: 5px solid burlywood;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    .sample-exam {
+        width: 50%;
+    }
+}
+
+.sample-exam:hover {
+    background-color: white;
+    color: burlywood;
+
+    text-decoration: none;
+}
+
+#body-div {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#nav-bar {
+    display: flex;
+
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+
+    margin-top: -16px;
+
+    padding-top: 15px;
+
+    background-color: white;
+
+    margin-bottom: 17px;
+
+    z-index: 1000;
+
+    animation-name: nav-bar-shadow;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: 0px 1px;
+}
+@keyframes nav-bar-shadow {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 2px 2px 2px gainsboro;
+    }
+}
+@media (max-width: 480px) {
+    margin-right: none;
+}
+
+#logo {
+    width: 20%;
+    color: black;
+
+    margin: 20px;
+    margin-left: 35px;
+}
+
+#right-align {
+    float: right;
+    width: 80%;
+    text-align: right;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin-right: 35px;
+}
+@media (max-width: 480px) {
+    #right-align {
+        display: none;
+    }
+}
+
+#hero {
+    display: flex;
+
+    padding: 0;
+
+    justify-content: center;
+}
+
+#hero-left {
+    width: 50%;
+
+    position: relative;
+
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+    #hero-left {
+        display: none;
+    }
+}
+
+#hero-1 {
+    left: 0;
+    right: 25%;
+
+    z-index: 12;
+
+    transform: rotate(-10deg);
+}
+
+#hero-2 {
+    left: 0;
+    right: 0;
+
+    width: 35%;
+
+    z-index: 11;
+
+    opacity: 0.5;
+    stroke-opacity: 1;
+}
+
+#hero-3 {
+    left: 25%;
+    right: 0;
+
+    z-index: 10;
+
+    transform: rotate(10deg);
+
+    opacity: 0.25;
+}
+
+#hero-1:hover {
+    animation-name: hero-1-scale;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+@keyframes hero-1-scale {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(-10deg) scale(1.2);
+    }
+}
+
+#hero-2:hover {
+    z-index: 13;
+
+    opacity: 1;
+
+    animation-name: hero-2-scale;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+@keyframes hero-2-scale {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+#hero-1:has(+ #hero-2:hover) {
+    opacity: 0.5;
+}
+
+#hero-3:hover {
+    z-index: 13;
+
+    opacity: 1;
+    
+    animation-name: hero-3-scale;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+@keyframes hero-3-scale {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(10deg) scale(1.2);
+    }
+}
+
+#hero-1:has(~ #hero-3:hover) {
+    opacity: 0.25;
+}
+
+#hero-right {
+    text-align: right;
+
+    float: right;
+
+    padding: 0;
+
+    margin: 100px;
+    margin-right: 75px;
+}
+@media (max-width: 480px) {
+    #hero-right {
+        margin-left: inherit;
+        margin-right: inherit;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+#division-grid-1 {
+    display: grid;
+    grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+    width: calc(66% - 12px);
+    grid-gap: 40px;
+    margin-left: calc(17% + 7px);
+}
+@media (max-width: 480px) {
+    #division-grid-1 {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+        margin-left: inherit;
+    }
+}
+
+#is-div {
+    view-timeline-name: --move-in-from-right;
+    view-timeline-axis: block;
+
+    animation: move-in-from-right ease both;
+    animation-timeline: --move-in-from-right;
+    animation-range: entry 75% cover 25%;
+}
+
+#em-div {
+    view-timeline-name: --move-in-from-right;
+    view-timeline-axis: block;
+
+    animation: move-in-from-right ease both;
+    animation-timeline: --move-in-from-right;
+    animation-range: entry 85% cover 30%;
+}
+
+#division-grid-2 {
+    display: grid;
+    grid-template-columns: calc(33% - 26px) calc(33% - 26px) calc(33% - 26px);
+    grid-gap: 40px;
+}
+@media (max-width: 480px) {
+    #division-grid-2 {
+        display: grid;
+        grid-template-columns: 100%;
+
+        margin-top: 40px;
+    }
+}
+
+#sss-div {
+    view-timeline-name: --move-in-from-right;
+    view-timeline-axis: block;
+
+    animation: move-in-from-right ease both;
+    animation-timeline: --move-in-from-right;
+    animation-range: entry 75% cover 25%;
+}
+
+#genius-div {
+    view-timeline-name: --move-in-from-right;
+    view-timeline-axis: block;
+
+    animation: move-in-from-right ease both;
+    animation-timeline: --move-in-from-right;
+    animation-range: entry 85% cover 30%;
+}
+
+#swe-div {
+    view-timeline-name: --move-in-from-right;
+    view-timeline-axis: block;
+
+    animation: move-in-from-right ease both;
+    animation-timeline: --move-in-from-right;
+    animation-range: entry 95% cover 35%;
+}
+
+#student-grid {
+    display: grid;
+    grid-template-columns: calc(25% - 30px) calc(25% - 30px) calc(25% - 30px) calc(25% - 30px);
+    grid-gap: 40px;
+}
+
+@media (max-width: 480px) {
+    #student-grid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+#student-reason-1 {
+    view-timeline-name: --move-in-from-left;
+    view-timeline-axis: block;
+
+    animation: move-in-from-left ease both;
+    animation-timeline: --move-in-from-left;
+    animation-range: entry 105% cover 40%;
+}
+
+#student-reason-2 {
+    view-timeline-name: --move-in-from-left;
+    view-timeline-axis: block;
+
+    animation: move-in-from-left ease both;
+    animation-timeline: --move-in-from-left;
+    animation-range: entry 95% cover 35%;
+}
+
+#student-reason-3 {
+    view-timeline-name: --move-in-from-left;
+    view-timeline-axis: block;
+
+    animation: move-in-from-left ease both;
+    animation-timeline: --move-in-from-left;
+    animation-range: entry 85% cover 30%;
+}
+
+#student-reason-4 {
+    view-timeline-name: --move-in-from-left;
+    view-timeline-axis: block;
+
+    animation: move-in-from-left ease both;
+    animation-timeline: --move-in-from-left;
+    animation-range: entry 75% cover 25%;
+}
+
+#parent-grid {
+    display: grid;
+    grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+    grid-gap: 40px;
+}
+
+@media (max-width: 480px) {
+    #parent-grid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+#parent-reason-1 {
+    view-timeline-name: --move-in-from-right;
+    view-timeline-axis: block;
+
+    animation: move-in-from-right ease both;
+    animation-timeline: --move-in-from-right;
+    animation-range: entry 75% cover 25%;
+}
+
+#parent-reason-2 {
+    view-timeline-name: --move-in-from-right;
+    view-timeline-axis: block;
+
+    animation: move-in-from-right ease both;
+    animation-timeline: --move-in-from-right;
+    animation-range: entry 85% cover 30%;
+}
+
+#division-grid-2, #student-grid {
+    margin-bottom: 100px;
+}
+
+#bio-1 {
+    margin-top: 60px;
+}
+
+#bio-photo-1 {
+    animation: none;
+}
+@media (max-width: 480px) {
+    #bio-photo-1 {
+        margin-bottom: 25px;
+    }
+}
+
+#bio-info-1 {
+    animation: none;
+}
+@media (max-width: 480px) {
+    #bio-info-1 {
+        animation-range: entry 50% cover 30%;
+    }
+}
+
+#mobile-nav {
+    background-color: gainsboro;
+
+    padding: 15px;
+
+    text-align: center;
+}
+@media (min-width: 481px) {
+    #mobile-nav {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    #mobile-nav a {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 28px;
+        font-weight: 200;
+        color: dimgray;
+    }
+
+    #mobile-nav a:hover {
+        text-decoration: none;
+    }
+}
+
+#footer {
+    text-align: center;
+    
+    background-color: dimgray;
+
+    min-height: 50px;
+    line-height: 50px;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+@media (max-width: 480px) {
+    #footer {
+        line-height: 25px;
+
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #intro-photo {
+        margin-bottom: 75px;
+
+        animation: none;
+    }
+
+    #small-on-phones {
+        font-size: 26px;
+    }
+}
