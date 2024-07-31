@@ -235,17 +235,17 @@ a:hover {
     margin-left: 30px;
     padding-top: 0;
 
-    view-timeline-name: --move-in-from-right;
+    view-timeline-name: --bio-move-in-from-right;
     view-timeline-axis: block;
 
-    animation: move-in-from-right ease both;
-    animation-timeline: --move-in-from-right;
+    animation: bio-move-in-from-right ease both;
+    animation-timeline: --bio-move-in-from-right;
     animation-range: entry 50% cover 50%;
 }
-@keyframes move-in-from-right {
+@keyframes bio-move-in-from-right {
     0% {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(30px);
     }
     100% {
         opacity: 1;
@@ -261,6 +261,17 @@ a:hover {
         margin-top: none;
 
         animation-range: entry 50% cover 30%;
+    }
+}
+
+@keyframes move-in-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
     }
 }
 
