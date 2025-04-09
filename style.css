@@ -154,6 +154,32 @@ a:hover {
     animation-fill-mode: forwards;
 }
 
+.update {
+    border-radius: 20px;
+
+    margin-bottom: 50px;
+    padding: 25px;
+
+    background-image: linear-gradient(315deg, #e0d2b4 0%, #e2ac6b 74%);
+}
+
+.update h5 {
+    font-weight: 700;
+    color: white;
+}
+
+.update-child {
+    border-radius: 20px;
+
+    padding: 10px 25px;
+
+    background-color: white;
+}
+
+.update-child p {
+    font-weight: 400;
+}
+
 .no-margin {
     margin: 0;
 }
